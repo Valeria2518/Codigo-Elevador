@@ -71,6 +71,14 @@ D12=digitalRead(12);
   }
 }else{
 
+}else if(D12==HIGH){
+ if (PosicionActual==1) {
+    delay(1000);
+   Motor(160,0);
+  }else if(PosicionActual==3 || PosicionActual==2 ){
+    Motor(0,120);
+  }
+}else{
 }
 
 
